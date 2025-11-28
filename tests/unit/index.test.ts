@@ -1,5 +1,5 @@
 import { describe, it, expect} from "vitest";
-import { hello } from "../../dist";
+import { hello } from "../../src/index";
 
 
 describe('Nimbus', ()=>{
