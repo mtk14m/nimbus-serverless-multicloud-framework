@@ -1,0 +1,39 @@
+{
+    "name": "nimbus", 
+    "version": "0.1.0", 
+    "description": "A serverless multi-cloud framework proposition",
+    "type": "module", 
+    "main": "./dist/index.js", 
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "tsc && esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --format=esm",
+        "dev": "tsc --watch", 
+        "test": "vitest",
+        "test:watch": "vitest --watch",
+        "type-check": "tsc --noEmit",
+        "lint": "eslint src --ext .ts",
+        "format": "prettier --write \"src/**/*ts\"",
+        "clean": "rm -rf dist"
+    },
+    "keywords": [
+        "serverless",
+        "nimbus",
+        "multi-cloud",
+        "framework",
+        "typescript",
+        "aws",
+        "lamba"
+    ],
+    "author":"Minou Matoko Nkalou -- minou.matokonkalou@viacesi.fr",
+    "license":"MIT",
+    "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.48.0",
+    "@typescript-eslint/parser": "^8.48.0",
+    "esbuild": "^0.27.0",
+    "eslint": "^9.39.1",
+    "prettier": "^3.7.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}
